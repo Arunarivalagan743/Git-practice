@@ -1,0 +1,1093 @@
+//GIT PRACTICE 
+
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IdeaProjects/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{b8a56db4-e665-11ef-adb3-200b7490b49a}.TM.blf
+ NTUSER.DAT{b8a56db4-e665-11ef-adb3-200b7490b49a}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{b8a56db4-e665-11ef-adb3-200b7490b49a}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~
+$ cd Desktop
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop
+$ ls
+'Arun.Off Portfolio'/   Firefox.lnk*         'Visual Studio Code.lnk'*   node_modules/
+'Course Practice'/      MongoDBCompass.lnk*   desktop.ini                package-lock.json
+ DarkArt/               Postman.lnk*          mern-auth/                 project/
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop
+$ cd project
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ ls
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ ls -a
+./  ../  .git/
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ ls .git
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ touch names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git branch
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit -m "names file added"
+[main (root-commit) b9fb3f7] names file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$  cat names.txt
+Arun
+Hari ki
+12th
+clg 2ndyr
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.txt
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git restore --staged names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.txt
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit -m "names modified"
+[main 22f96fe] names modified
+ 1 file changed, 4 insertions(+)
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit 22f96fea21bee8c918f9307c596e2b19398752f9 (HEAD -> main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:04:22 2025 +0530
+
+    names modified
+
+commit b9fb3f786234cb8dbeb7536c1c24daa16159304b
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ rm -rf names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit -m "name file deleted"
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit -m "name file deleted"
+[main d4918d9] name file deleted
+ 1 file changed, 4 deletions(-)
+ delete mode 100644 names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit d4918d927a37f24e504b6dbed97d3f4ebb3b747b (HEAD -> main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:07:35 2025 +0530
+
+    name file deleted
+
+commit 22f96fea21bee8c918f9307c596e2b19398752f9
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:04:22 2025 +0530
+
+    names modified
+
+commit b9fb3f786234cb8dbeb7536c1c24daa16159304b
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ ^C
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ ^C
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git reset ^C
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git reset  b9fb3f786234cb8dbeb7536c1c24daa16159304b
+Unstaged changes after reset:
+D       names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    names.txt
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ touch surname.text
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    names.txt -> surname.text
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ vi surname.text
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ touch house.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+warning: in the working copy of 'surname.text', LF will be replaced by CRLF the next time Git touches it
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    names.txt -> house.txt
+        new file:   surname.text
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git stash
+Saved working directory and index state WIP on main: b9fb3f7 names file added
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit b9fb3f786234cb8dbeb7536c1c24daa16159304b (HEAD -> main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ cat names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git stash pop
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   house.txt
+        new file:   surname.text
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+Dropped refs/stash@{0} (a6772e12676238cdd4b95b9044cb2145298b22ec)
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git stash
+Saved working directory and index state WIP on main: b9fb3f7 names file added
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git stash clear
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git remote add origin ^[[200~$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git remote add origin https://github.com/Arunarivalagan743/Git-practice
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git remote -v
+origin  https://github.com/Arunarivalagan743/Git-practice (fetch)
+origin  https://github.com/Arunarivalagan743/Git-practice (push)
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git push origin main
+To https://github.com/Arunarivalagan743/Git-practice
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Arunarivalagan743/Git-practice'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git push origin main
+To https://github.com/Arunarivalagan743/Git-practice
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Arunarivalagan743/Git-practice'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ ^[[200~git pull origin main --rebase
+bash: $'\E[200~git': command not found
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git pull origin main --rebase
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 882 bytes | 21.00 KiB/s, done.
+From https://github.com/Arunarivalagan743/Git-practice
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 96.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Arunarivalagan743/Git-practice
+   4035789..50b203b  main -> main
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ touch arun.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit -m "arun added"
+[main d07f71c] arun added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 arun.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ touch hari.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit -m "hari.txt"
+[main b952a3c] hari.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hari.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (HEAD -> main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493 (origin/main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git branch dev
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git checkout dev
+Switched to branch 'dev'
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git commit
+On branch dev
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git checkout main
+Switched to branch 'main'
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git commit
+On branch main
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (HEAD -> main, dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493 (origin/main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (HEAD -> main, dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493 (origin/main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git log
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (HEAD -> main, dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493 (origin/main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 457 bytes | 152.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Arunarivalagan743/Git-practice
+   50b203b..b952a3c  main -> main
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ vi names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ cat names.txt
+arun says the github is amazig iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:x
+:wq
+
+
+
+:wq
+
+
+:::::::::x
+
+
+
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ vi arun.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ cat arun.txt
+My name is arun
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   arun.txt
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git checkout
+M       arun.txt
+M       names.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git add .
+warning: in the working copy of 'arun.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (main)
+$ git checkout dev
+M       arun.txt
+M       names.txt
+Switched to branch 'dev'
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git commit  -m "arun add file in dev"
+[dev 2a9371f] arun add file in dev
+ 2 files changed, 14 insertions(+)
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git log
+commit 2a9371fa416668f3357f9aa3ea0a479e95baf4b1 (HEAD -> dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:16:59 2025 +0530
+
+    arun add file in dev
+
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$    git push origin dev
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 365 bytes | 182.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/Arunarivalagan743/Git-practice/pull/new/dev
+remote:
+To https://github.com/Arunarivalagan743/Git-practice
+ * [new branch]      dev -> dev
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ vi arun.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git add .
+warning: in the working copy of 'arun.txt', LF will be replaced by CRLF the next time Git touches it
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 2a9371f arun add file in dev
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git log
+commit 2a9371fa416668f3357f9aa3ea0a479e95baf4b1 (HEAD -> dev, origin/dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:16:59 2025 +0530
+
+    arun add file in dev
+
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git push origin dev
+Everything up-to-date
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git commit
+On branch dev
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git commit -m "stash"
+On branch dev
+nothing to commit, working tree clean
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git push origin dev
+Everything up-to-date
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git branch temp
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git touch demo
+git: 'touch' is not a git command. See 'git --help'.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$  touch demo
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git add .;git commit -m "demo"
+[dev d367000] demo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git log
+commit d367000d9e4469882178d7b2d92e98d43901af25 (HEAD -> dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:41:39 2025 +0530
+
+    demo
+
+commit 2a9371fa416668f3357f9aa3ea0a479e95baf4b1 (origin/dev, temp)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:16:59 2025 +0530
+
+    arun add file in dev
+
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git reset d367000d9e4469882178d7b2d92e98d43901af25
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git log
+commit d367000d9e4469882178d7b2d92e98d43901af25 (HEAD -> dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:41:39 2025 +0530
+
+    demo
+
+commit 2a9371fa416668f3357f9aa3ea0a479e95baf4b1 (origin/dev, temp)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:16:59 2025 +0530
+
+    arun add file in dev
+
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git checkout
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (dev)
+$ git checkout temp
+Switched to branch 'temp'
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp)
+$  touch demo.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp)
+$ git log
+commit 2a9371fa416668f3357f9aa3ea0a479e95baf4b1 (HEAD -> temp, origin/dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:16:59 2025 +0530
+
+    arun add file in dev
+
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp)
+$ git add .;git commit -m "demo"
+[temp 09e3b8d] demo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo.txt
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp)
+$ git log
+commit 09e3b8dbc8cb0a0315bd630bb5868a88e0c4a1c3 (HEAD -> temp)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:43:45 2025 +0530
+
+    demo
+
+commit 2a9371fa416668f3357f9aa3ea0a479e95baf4b1 (origin/dev)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 20:16:59 2025 +0530
+
+    arun add file in dev
+
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp)
+$ git rebase -i b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed
+Successfully rebased and updated refs/heads/temp.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp)
+$ git rebase -i b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed
+error: invalid command ':x'
+error: invalid line 4: :x
+You can fix this with 'git rebase --edit-todo' and then run 'git rebase --continue'.
+Or you can abort the rebase with 'git rebase --abort'.
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git log
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (HEAD, origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git log
+commit b952a3c3d2e1a9c0bf2ebe43325edf0410cdeaed (HEAD, origin/main, main)
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:53:23 2025 +0530
+
+    hari.txt
+
+commit d07f71ce09f2b39bdf108571b28d4b7fcea76f84
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 19:52:58 2025 +0530
+
+    arun added
+
+commit 50b203ba289c15fe2cca33dc390f6e3a38842493
+Author: Arunarivalagan743 <arunarivalagan774@example.com>
+Date:   Sat Mar 1 18:57:10 2025 +0530
+
+    names file added
+
+commit 4035789a2be09b95449a227680c9b981d3eff923
+Author: Arun Official 743 <142808403+Arunarivalagan743@users.noreply.github.com>
+Date:   Sat Mar 1 19:45:59 2025 +0530
+
+    Initial commit
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git reset --hard ^C
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push origin main
+To https://github.com/Arunarivalagan743/Git-practice
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Arunarivalagan743/Git-practice'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git pull origin main --rebase
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 908 bytes | 454.00 KiB/s, done.
+From https://github.com/Arunarivalagan743/Git-practice
+ * branch            main       -> FETCH_HEAD
+   b952a3c..d2db1e1  main       -> origin/main
+Updating b952a3c..d2db1e1
+Fast-forward
+ arun.txt  |  1 +
+ names.txt | 13 +++++++++++++
+ 2 files changed, 14 insertions(+)
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push origin main
+To https://github.com/Arunarivalagan743/Git-practice
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Arunarivalagan743/Git-practice'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push origin dev
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 230 bytes | 230.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Arunarivalagan743/Git-practice
+   2a9371f..d367000  dev -> dev
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push origin main
+To https://github.com/Arunarivalagan743/Git-practice
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Arunarivalagan743/Git-practice'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git add .
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push origin main
+To https://github.com/Arunarivalagan743/Git-practice
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Arunarivalagan743/Git-practice'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$ git push origin temp
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'temp' on GitHub by visiting:
+remote:      https://github.com/Arunarivalagan743/Git-practice/pull/new/temp
+remote:
+To https://github.com/Arunarivalagan743/Git-practice
+ * [new branch]      temp -> temp
+
+HP@LAPTOP-1L8H9D0V MINGW64 ~/Desktop/project (temp|REBASE)
+$
